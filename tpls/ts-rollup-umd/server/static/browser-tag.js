@@ -1,0 +1,1 @@
+(function(){"use strict";(function(n,e,t,r,i){n["KassadinMonitorObject"]=i;n[i]=n[i]||function(e){n[i].config=e};var s=e.createElement(t);var a=e.getElementsByTagName(t)[0];s.async=true;s.src=r;if(a.parentNode){a.parentNode.insertBefore(s,a)}})(window,document,"script","/index.browser.js","Kassadin")})();

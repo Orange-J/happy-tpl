@@ -1,0 +1,36 @@
+{
+  "name": "@fe/kassadin",
+  "version": "0.0.1",
+  "description": "游戏中台-浏览器检测与提示",
+  "main": "dist/index.umd.js",
+  "browser": "dist/index.browser.js",
+  "scripts": {
+    "pub": "npm publish --registry=http://bnpm.byted.org",
+    "dev": "npm run dev:tsc & npm run dev:bundle & npm run dev:server",
+    "dev:tsc": "tsc -w",
+    "dev:bundle": "rollup -c -w",
+    "dev:server": "node server/index.js",
+    "build": "rm -rf dist && rm -rf esm && tsc && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@code.byted.org:game-fe/kassadin.git"
+  },
+  "keywords": [],
+  "author": "juhaotian",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "koa": "^2.13.0",
+    "koa-static": "^5.0.0",
+    "rollup": "^2.26.9",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@types/ua-parser-js": "^0.7.33",
+    "ua-parser-js": "^0.7.21"
+  }
+}

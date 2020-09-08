@@ -1,5 +1,5 @@
 {
-  "name": "@fe/kassadin",
+  "name": "ts-rollup-umd",
   "version": "0.0.1",
   "description": "desc",
   "main": "dist/index.umd.js",

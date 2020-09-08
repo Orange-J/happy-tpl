@@ -15,5 +15,17 @@ export default [
       commonjs(), // 让rollup将node_modules中的包转为ESModule
       uglify(),
     ]
+  },
+  {
+    input: 'esm/util/browser-tag.js',
+    output: {
+      file: 'server/static/browser-tag.js',
+      format: 'iife'
+    },
+    plugins: [
+      uglify({
+        compress: false,
+      })
+    ]
   }
 ];
